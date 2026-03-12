@@ -4,12 +4,17 @@
   min-height: 100vh;
   padding-top: 80px;
   padding-bottom: 4rem;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 .posts-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .posts-header {

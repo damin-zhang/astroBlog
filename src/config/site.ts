@@ -1,51 +1,52 @@
 // Site-wide configuration
 export const siteConfig = {
   // Site metadata
-  name: "Astro Blog",
-  title: "Astro Blog",
-  description: "A modern blog built with Astro",
-  
+  name: "Zhangdamin's Blog",
+  title: "Zhangdamin's Blog",
+  description: "楠菜山，张大敏的个人网站。分享技术、生活与思考。",
+
   // Navigation
   navigation: {
-    home: "Home",
-    posts: "Posts",
-    contact: "Contact",
-    comments: "Comments",
+    home: "首页",
+    posts: "文章",
+    about: "关于",
+    contact: "联系",
+    comments: "评论",
   },
-  
+
   // Hero Section
   hero: {
-    prefix: "I am",
-    name: "Someone Name",
-    intro: "I am a web developer and blogger, passionate about sharing knowledge and building cool things with code.\nWelcome to my portfolio blog!",
+    prefix: "我是",
+    name: "张大敏",
+    intro: "我是一名前端开发者和技术博主，热衷于分享知识和构建有趣的项目。\n欢迎来到我的个人博客！",
     avatar: "/image/20943608.jpeg",
     buttons: {
-      viewPosts: "View Posts",
-      contactMe: "Contact Me",
+      viewPosts: "查看文章",
+      contactMe: "联系我",
     },
     socialLinks: [
-      { name: "Twitter", icon: "/svg/twitter.svg", url: "https://x.com/astrodotbuild" },
-      { name: "LinkedIn", icon: "/svg/linkedin.svg", url: "https://www.linkedin.com/company/astrodotbuild" },
-      { name: "Facebook", icon: "/svg/facebook.svg", url: "https://www.facebook.com/astrodotbuild" },
-      { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/tomcomtang/astro-cartoon-portfolio" },
+      { name: "LinkedIn", icon: "/svg/linkedin.svg", url: "https://www.linkedin.com/in/zhangdamin" },
+      { name: "Facebook", icon: "/svg/facebook.svg", url: "https://www.facebook.com/zhangdamin07" },
+      { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/damin-zhang" },
+      { name: "Bilibili", icon: "/svg/bilibili.svg", url: "https://space.bilibili.com/431539006" },
     ],
   },
-  
+
   // About Section
   about: {
-    title: "About Me",
-    text: "Hi, I'm Someone, a passionate web developer and blogger. I love exploring new technologies and sharing knowledge with the community. On this blog, you'll find my thoughts on web development, tutorials, and project showcases. I hope my content can inspire others in their coding journey.",
+    title: "关于我",
+    text: "你好，我是张大敏，一名热衷于前端开发的技术爱好者。我喜欢探索新技术，分享学习心得和项目经验。在这个博客里，你会找到我的技术笔记、教程和项目展示。希望能对我的文章对你有所帮助！",
   },
-  
+
   // Contact Page
   contact: {
-    title: "Get In Touch",
-    subtitle: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.",
+    title: "联系我",
+    subtitle: "无论是新项目合作、创意交流还是其他机会，都欢迎与我联系。",
     info: {
       email: {
-        label: "Email",
-        value: "tom@example.com",
-        link: "mailto:tom@example.com",
+        label: "邮箱",
+        value: "your-email@example.com",
+        link: "mailto:your-email@example.com",
       },
       phone: {
         label: "Phone",
@@ -53,62 +54,56 @@ export const siteConfig = {
         link: "tel:+1 (234) 567-890",
       },
       location: {
-        label: "Location",
-        value: "San Francisco, CA",
+        label: "所在地",
+        value: "中国",
       },
     },
     followMe: {
-      title: "Follow Me",
+      title: "关注我",
       links: [
-        { name: "Twitter", icon: "/svg/twitter.svg", url: "https://x.com/astrodotbuild" },
-        { name: "LinkedIn", icon: "/svg/linkedin.svg", url: "https://www.linkedin.com/company/astrodotbuild" },
-        { name: "Facebook", icon: "/svg/facebook.svg", url: "https://www.facebook.com/astrodotbuild" },
-        { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/tomcomtang/astro-cartoon-portfolio" },
+        { name: "LinkedIn", icon: "/svg/linkedin.svg", url: "https://www.linkedin.com/in/zhangdamin" },
+        { name: "Facebook", icon: "/svg/facebook.svg", url: "https://www.facebook.com/zhangdamin07" },
+        { name: "GitHub", icon: "/svg/github.svg", url: "https://github.com/damin-zhang" },
+        { name: "Bilibili", icon: "/svg/bilibili.svg", url: "https://space.bilibili.com/431539006" },
       ],
     },
     footerText: [
-      "I typically respond to messages within 24 hours during business days.",
-      "Looking forward to hearing from you! 🚀",
+      "我会在工作日内 24 小时内回复消息。",
+      "期待与你交流！🚀",
     ],
-    messageButton: "💬 Leave a Message",
+    messageButton: "💬 留言",
   },
-  
+
   // Footer
   footer: {
-    copyright: "© 2025 Someone. All rights reserved.",
-    links: [
-      { text: "Privacy Policy", url: "#" },
-      { text: "Terms of Service", url: "#" },
-      { text: "Sitemap", url: "#" },
-    ],
+    copyright: "© 2026 张大敏。All rights reserved.",
+    links: [],
     github: {
-      text: "Star this project on Github",
+      text: "在 GitHub 上给这个项目点 Star",
       url: "https://github.com/tomcomtang/astro-cartoon-portfolio",
     },
   },
-  
+
   // Posts Page
   posts: {
-    title: "Blog Posts",
-    subtitle: "Explore our latest articles on web development, design, and technology",
-    searchPlaceholder: "Search posts...",
+    title: "博客文章",
+    subtitle: "探索关于前端开发、技术和生活的最新文章",
+    searchPlaceholder: "搜索文章...",
   },
-  
+
   // Comments Page
   comments: {
-    title: "Comments & Discussion",
-    subtitle: "Share your thoughts, questions, or suggestions here. Let's connect and discuss!",
+    title: "评论与讨论",
+    subtitle: "在这里分享你的想法、问题或建议。让我们一起交流讨论！",
     guidelines: {
-      title: "Community Guidelines",
+      title: "社区准则",
       items: [
-        "Be respectful and constructive in your comments",
-        "No spam, self-promotion, or advertising allowed",
-        "No personal attacks, hate speech, or harassment",
-        "Stay on topic and keep discussions relevant",
-        "No inappropriate, offensive, or illegal content",
-        "Use clear, friendly, and inclusive language",
+        "尊重他人，建设性评论",
+        "禁止垃圾广告和自我推广",
+        "禁止人身攻击和不当言论",
+        "保持话题相关",
+        "使用友好包容的语言",
       ],
     },
   },
 };
-
