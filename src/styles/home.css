@@ -78,25 +78,15 @@ html {
   scrollbar-color: #76cfc5 #f0f8ff;
 }
 
-html {
-  width: 100%;
-  overflow: hidden;
-  overflow-x: hidden;
-  height: 100vh;
-}
-
+html,
 body {
-  width: 100%;
-  height: 100vh;
-  max-width: 100%;
-  padding-top: 69px;
   background: #fafdff;
   -webkit-text-size-adjust: 100%;
   font: sans-serif;
   font-size: var(--font-md);
   line-height: var(--line-height-normal);
-  overflow-x: hidden;
   overflow-y: scroll;
+  overflow-x: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: var(--color-text);
@@ -143,8 +133,8 @@ ul li {
   padding-left: 0;
 }
 
-li>ol,
-li>ul {
+li > ol,
+li > ul {
   margin-bottom: calc(var(--space-4) / 2);
   margin-left: var(--space-4);
   margin-top: calc(var(--space-4) / 2);
@@ -156,7 +146,7 @@ p :last-child {
   margin-bottom: 0;
 }
 
-li>p {
+li > p {
   margin-bottom: calc(var(--space-4) / 2);
 }
 
@@ -223,7 +213,6 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
   z-index: 1000;
   background: rgba(250, 253, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -295,7 +284,6 @@ nav {
   background: #fafdff;
   min-height: 100vh;
   width: 100%;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,7 +292,6 @@ nav {
   margin: 0;
   font-family: var(--font-sans);
   padding-top: 60px;
-  overflow-x: hidden;
 }
 
 .hero-content-wrapper {
@@ -316,7 +303,6 @@ nav {
   gap: 2rem;
   width: 100%;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .hero-left-col {
@@ -484,11 +470,19 @@ nav {
 
 /* About Me Section */
 .about-section {
-  background: linear-gradient(135deg,
-      #6dd5c7 0%,
-      #5bc0ae 50%,
-      #4db09e 100%);
-  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #6dd5c7 0%,
+    #5bc0ae 50%,
+    #4db09e 100%
+  );
+  width: 100vw;
+  min-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   padding: 6rem 0;
   min-height: 600px;
   box-sizing: border-box;
@@ -525,11 +519,19 @@ nav {
 }
 
 .new-section {
-  background: linear-gradient(135deg,
-      #f8fafc 0%,
-      #f1f5f9 50%,
-      #e2e8f0 100%);
-  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #f1f5f9 50%,
+    #e2e8f0 100%
+  );
+  width: 100vw;
+  min-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   padding: 4rem 0;
   height: 460px;
   box-sizing: border-box;
@@ -537,11 +539,19 @@ nav {
 
 /* Projects Section */
 .projects-section {
-  background: linear-gradient(135deg,
-      #f0a868 0%,
-      #ecb993 50%,
-      #e8a87c 100%);
-  width: 100%;
+  background: linear-gradient(
+    135deg,
+    #f0a868 0%,
+    #ecb993 50%,
+    #e8a87c 100%
+  );
+  width: 100vw;
+  min-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   padding: 6rem 0;
 }
 
@@ -551,8 +561,6 @@ nav {
   color: #fff;
   text-align: center;
   padding: 0 2rem;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .project-description-area {
@@ -598,7 +606,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   perspective: 1500px;
   perspective-origin: center center;
   padding: 0.25rem 0;
@@ -612,7 +620,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .coverflow-item {
@@ -629,23 +636,27 @@ nav {
 }
 
 .mask {
-  mask-image: linear-gradient(to right,
-      transparent 10%,
-      black 25%,
-      black 75%,
-      transparent 90%);
-  -webkit-mask-image: linear-gradient(to right,
-      transparent 10%,
-      black 25%,
-      black 75%,
-      transparent 90%);
+  mask-image: linear-gradient(
+    to right,
+    transparent 10%,
+    black 25%,
+    black 75%,
+    transparent 90%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 10%,
+    black 25%,
+    black 75%,
+    transparent 90%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 @media (max-width: 600px) {
@@ -653,52 +664,48 @@ nav {
     width: 250px;
     height: 250px;
   }
-
   .coverflow-item {
     width: 250px;
     height: 250px;
     border-radius: 20px;
   }
-
   .projects-container {
     padding: 0 1rem;
   }
-
   .projects-carousel-wrapper {
     height: 350px;
     overflow: hidden;
   }
-
   .mask {
-    mask-image: linear-gradient(to right,
-        transparent 10%,
-        black 25%,
-        black 75%,
-        transparent 90%);
-    -webkit-mask-image: linear-gradient(to right,
-        transparent 10%,
-        black 25%,
-        black 75%,
-        transparent 90%);
+    mask-image: linear-gradient(
+      to right,
+      transparent 10%,
+      black 25%,
+      black 75%,
+      transparent 90%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 10%,
+      black 25%,
+      black 75%,
+      transparent 90%
+    );
   }
-
   .project-description-area {
     padding: 1.5rem 0;
     margin-top: 2rem;
   }
-
   .project-description-viewport {
     height: 180px;
   }
-
+  
   .project-content-item {
     min-height: 180px;
   }
-
   .project-title {
     font-size: 1.5rem;
   }
-
   .project-description {
     font-size: 1rem;
   }
@@ -813,7 +820,13 @@ nav {
 /* Proficiency Section */
 .proficiency-section {
   background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
-  width: 100%;
+  width: 100vw;
+  min-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   padding: 6rem 0;
   min-height: 600px;
   box-sizing: border-box;
@@ -951,15 +964,13 @@ nav {
 footer {
   height: 60px;
   background: #fff;
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.03);
   position: relative;
   left: 0;
   margin-top: 0;
-  overflow-x: hidden;
 }
 
 .footer-content {
