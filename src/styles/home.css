@@ -72,11 +72,6 @@
   background: #f0f8ff;
 }
 
-/* Firefox Scrollbar Styles */
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #76cfc5 #f0f8ff;
-}
 
 html,
 body {
@@ -93,6 +88,19 @@ body {
   font-family: var(--font-sans);
   font-weight: normal;
   word-wrap: break-word;
+}
+
+/* Firefox Scrollbar Styles */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #76cfc5 #f0f8ff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow-y: auto;
 }
 
 /* Global typography styles - matching reference site */
@@ -133,8 +141,8 @@ ul li {
   padding-left: 0;
 }
 
-li > ol,
-li > ul {
+li>ol,
+li>ul {
   margin-bottom: calc(var(--space-4) / 2);
   margin-left: var(--space-4);
   margin-top: calc(var(--space-4) / 2);
@@ -146,7 +154,7 @@ p :last-child {
   margin-bottom: 0;
 }
 
-li > p {
+li>p {
   margin-bottom: calc(var(--space-4) / 2);
 }
 
@@ -470,12 +478,10 @@ nav {
 
 /* About Me Section */
 .about-section {
-  background: linear-gradient(
-    135deg,
-    #6dd5c7 0%,
-    #5bc0ae 50%,
-    #4db09e 100%
-  );
+  background: linear-gradient(135deg,
+      #6dd5c7 0%,
+      #5bc0ae 50%,
+      #4db09e 100%);
   width: 100vw;
   min-width: 100vw;
   position: relative;
@@ -519,12 +525,10 @@ nav {
 }
 
 .new-section {
-  background: linear-gradient(
-    135deg,
-    #f8fafc 0%,
-    #f1f5f9 50%,
-    #e2e8f0 100%
-  );
+  background: linear-gradient(135deg,
+      #f8fafc 0%,
+      #f1f5f9 50%,
+      #e2e8f0 100%);
   width: 100vw;
   min-width: 100vw;
   position: relative;
@@ -539,12 +543,10 @@ nav {
 
 /* Projects Section */
 .projects-section {
-  background: linear-gradient(
-    135deg,
-    #f0a868 0%,
-    #ecb993 50%,
-    #e8a87c 100%
-  );
+  background: linear-gradient(135deg,
+      #f0a868 0%,
+      #ecb993 50%,
+      #e8a87c 100%);
   width: 100vw;
   min-width: 100vw;
   position: relative;
@@ -636,20 +638,16 @@ nav {
 }
 
 .mask {
-  mask-image: linear-gradient(
-    to right,
-    transparent 10%,
-    black 25%,
-    black 75%,
-    transparent 90%
-  );
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 10%,
-    black 25%,
-    black 75%,
-    transparent 90%
-  );
+  mask-image: linear-gradient(to right,
+      transparent 10%,
+      black 25%,
+      black 75%,
+      transparent 90%);
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 10%,
+      black 25%,
+      black 75%,
+      transparent 90%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -664,48 +662,52 @@ nav {
     width: 250px;
     height: 250px;
   }
+
   .coverflow-item {
     width: 250px;
     height: 250px;
     border-radius: 20px;
   }
+
   .projects-container {
     padding: 0 1rem;
   }
+
   .projects-carousel-wrapper {
     height: 350px;
     overflow: hidden;
   }
+
   .mask {
-    mask-image: linear-gradient(
-      to right,
-      transparent 10%,
-      black 25%,
-      black 75%,
-      transparent 90%
-    );
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent 10%,
-      black 25%,
-      black 75%,
-      transparent 90%
-    );
+    mask-image: linear-gradient(to right,
+        transparent 10%,
+        black 25%,
+        black 75%,
+        transparent 90%);
+    -webkit-mask-image: linear-gradient(to right,
+        transparent 10%,
+        black 25%,
+        black 75%,
+        transparent 90%);
   }
+
   .project-description-area {
     padding: 1.5rem 0;
     margin-top: 2rem;
   }
+
   .project-description-viewport {
     height: 180px;
   }
-  
+
   .project-content-item {
     min-height: 180px;
   }
+
   .project-title {
     font-size: 1.5rem;
   }
+
   .project-description {
     font-size: 1rem;
   }

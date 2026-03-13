@@ -68,7 +68,7 @@ if (
   Content = String(result);
 } else {
   throw new Error(
-    `Cannot find content in post. Available keys: ${Object.keys(post).join(", ")}`
+    `Cannot find content in post. Available keys: ${Object.keys(post).join(", ")}`,
   );
 }
 ---
@@ -76,7 +76,7 @@ if (
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>{post.data.title} - Astro Blog</title>
@@ -233,15 +233,15 @@ if (
             const headings = postContent.querySelectorAll(config.selector);
             const marginTop = getCSSVar(
               config.marginTopVar,
-              config.defaults.marginTop
+              config.defaults.marginTop,
             );
             const marginBottom = getCSSVar(
               config.marginBottomVar,
-              config.defaults.marginBottom
+              config.defaults.marginBottom,
             );
             const contentMarginTop = getCSSVar(
               config.contentMarginTopVar,
-              config.defaults.contentMarginTop
+              config.defaults.contentMarginTop,
             );
 
             headings.forEach((heading) => {
@@ -273,7 +273,7 @@ if (
         // Override code block inline styles - use function to run multiple times
         const overrideCodeStyles = () => {
           const codeBlocks = document.querySelectorAll(
-            ".post-content pre, .post-content pre.astro-code"
+            ".post-content pre, .post-content pre.astro-code",
           );
           codeBlocks.forEach((pre) => {
             if (pre instanceof HTMLElement) {

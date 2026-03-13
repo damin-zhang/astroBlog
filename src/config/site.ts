@@ -19,7 +19,7 @@ export const siteConfig = {
     prefix: "我是",
     name: "张大敏",
     intro: "我是一名前端开发者和技术博主，热衷于分享知识和构建有趣的项目。\n欢迎来到我的个人博客！",
-    avatar: "/image/20943608.jpeg",
+    avatar: "/image/avater2.png",
     buttons: {
       viewPosts: "查看文章",
       contactMe: "联系我",
@@ -35,7 +35,7 @@ export const siteConfig = {
   // About Section
   about: {
     title: "关于我",
-    text: "你好，我是张大敏，一名热衷于前端开发的技术爱好者。我喜欢探索新技术，分享学习心得和项目经验。在这个博客里，你会找到我的技术笔记、教程和项目展示。希望能对我的文章对你有所帮助！",
+    text: "你好，我是张大敏，一名热衷于前端开发的技术爱好者。我喜欢探索新技术，了解前沿科技内容，分享学习心得和项目经验。在这个博客里，你会找到我的技术笔记、学习记录、项目展示和生活分享。希望能对我的内容感兴趣，并欢迎交流讨论！",
   },
 
   // Contact Page
@@ -45,8 +45,8 @@ export const siteConfig = {
     info: {
       email: {
         label: "邮箱",
-        value: "your-email@example.com",
-        link: "mailto:your-email@example.com",
+        value: "bigmin.zhang@gmail.com",
+        link: "mailto:bigmin.zhang@gmail.com",
       },
       phone: {
         label: "Phone",
@@ -55,7 +55,7 @@ export const siteConfig = {
       },
       location: {
         label: "所在地",
-        value: "中国",
+        value: "中国成都",
       },
     },
     followMe: {
@@ -79,7 +79,7 @@ export const siteConfig = {
     copyright: "© 2026 张大敏。All rights reserved.",
     links: [],
     github: {
-      text: "在 GitHub 上给这个项目点 Star",
+      text: "工具应用",
       url: "https://github.com/tomcomtang/astro-cartoon-portfolio",
     },
   },
