@@ -22,10 +22,10 @@ export const projectsConfig = {
       githubLink: "#",
     },
     {
-      title: "Task Management App",
+      title: "Email Template Generator",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features for enhanced productivity.",
-      technologies: ["Vue.js", "Firebase", "Vuex", "Vuetify"],
+        "A powerful email template generator application with drag-and-drop builder, responsive templates, and real-time preview. Create professional email templates for marketing campaigns and newsletters.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "EmailJS"],
       liveLink: "#",
       githubLink: "#",
     },

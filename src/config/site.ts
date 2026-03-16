@@ -1,14 +1,15 @@
 // Site-wide configuration
 export const siteConfig = {
   // Site metadata
-  name: "Zhangdamin's Blog",
-  title: "Zhangdamin's Blog",
+  name: "张大敏的博客",
+  title: "张大敏的博客",
   description: "楠菜山，张大敏的个人网站。分享技术、生活与思考。",
 
   // Navigation
   navigation: {
     home: "首页",
     posts: "文章",
+    tools: "应用",
     about: "关于",
     contact: "联系",
     comments: "评论",
@@ -79,8 +80,8 @@ export const siteConfig = {
     copyright: "© 2026 张大敏。All rights reserved.",
     links: [],
     github: {
-      text: "工具应用",
-      url: "https://github.com/tomcomtang/astro-cartoon-portfolio",
+      text: "",
+      url: "",
     },
   },
 

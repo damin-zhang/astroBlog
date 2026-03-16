@@ -19,8 +19,15 @@ import { siteConfig } from "../config/site";
         ))
       }
     </div>
-    <a href={siteConfig.footer.github.url} class="footer-github"
-      >{siteConfig.footer.github.text}</a
-    >
+    <div class="footer-icp">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" class="icp-link">
+        蜀 ICP 备 20009910 号
+      </a>
+    </div>
+    {siteConfig.footer.github.text && (
+      <a href={siteConfig.footer.github.url} class="footer-github"
+        >{siteConfig.footer.github.text}</a
+      >
+    )}
   </div>
 </footer>

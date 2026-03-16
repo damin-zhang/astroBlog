@@ -989,6 +989,7 @@ footer {
   white-space: nowrap;
   padding-left: 2rem;
   padding-right: 2rem;
+  gap: 1.5rem;
 }
 
 .footer-text {
@@ -1036,6 +1037,26 @@ footer {
   transform: translateY(-2px);
 }
 
+/* ICP Filing Number */
+.footer-icp {
+  flex-shrink: 0;
+}
+
+.icp-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.icp-link:hover {
+  color: #76cfc5;
+  background: rgba(118, 207, 197, 0.08);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero-content-wrapper {
@@ -1074,6 +1095,22 @@ footer {
 
   .circular-progress-text {
     font-size: 1.3rem;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .footer-text {
+    justify-content: center;
+  }
+
+  .footer-icp {
+    order: 3;
+    width: 100%;
   }
 }
 
