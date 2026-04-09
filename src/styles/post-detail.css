@@ -142,8 +142,9 @@
 }
 
 /* Override global styles for post-content - ensure left alignment and proper spacing */
+.post-detail-page .post-content p,
 .post-detail-page .post-content :global(p) {
-  max-width: none !important;
+  max-width: 100% !important;
   text-align: left !important;
   margin-top: 0 !important;
   margin-bottom: 2rem !important;
@@ -397,6 +398,22 @@
 
 .post-detail-page .post-content :global(.highlight) :global(p) {
   margin-bottom: 0;
+}
+
+/* Bilibili Video Container */
+.post-detail-page .post-content :global(.video-container) {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.post-detail-page .post-content :global(.video-container) iframe {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */

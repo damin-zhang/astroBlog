@@ -61,8 +61,8 @@ if (
 
   const processor = unified()
     .use(remarkParse)
-    .use(remarkRehype)
-    .use(rehypeStringify);
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeStringify, { allowDangerousHtml: true });
 
   const result = await processor.process(post.body);
   Content = String(result);
@@ -88,6 +88,11 @@ if (
       // Immediately scroll to top on page load
       window.scrollTo(0, 0);
     </script>
+    <style is:global>
+      main.post-detail-page .post-content p {
+        max-width: 100% !important;
+      }
+    </style>
   </head>
   <body>
     <Navigation />

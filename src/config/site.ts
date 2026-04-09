@@ -77,7 +77,7 @@ export const siteConfig = {
 
   // Footer
   footer: {
-    copyright: "© 2026 张大敏。All rights reserved.",
+    copyright: "© 2020-2026 张大敏。All rights reserved.",
     links: [],
     github: {
       text: "",
