@@ -1,98 +1,43 @@
-// Projects configuration
+// 项目配置
 export const projectsConfig = {
   images: [
-    "/svg/project1.svg",
-    "/svg/project2.svg",
-    "/svg/project3.svg",
-    "/svg/project4.svg",
-    "/svg/project5.svg",
-    "/svg/project6.svg",
-    "/svg/project7.svg",
-    "/svg/project8.svg",
-    "/svg/project9.svg",
-    "/svg/project10.svg",
+    "/projects/EmailCraftAI.png",
+    "/projects/ImageGenerator.png",
+    "/projects/VisalInspection.png",
+    "/projects/VisalInspection2.png",
   ],
   projects: [
     {
-      title: "E-Commerce Platform",
+      title: "邮件模板生成器",
       description:
-        "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveLink: "#",
-      githubLink: "#",
+        "基于AI的智能邮件模板生成工具，支持拖拽式编辑、响应式模板和实时预览。可快速创建专业的营销邮件和通知模板，提升邮件制作效率。",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "AI"],
+      liveLink: "https://tools.zhangdamin.cn/email-template",
+      githubLink: "https://github.com/damin-zhang",
     },
     {
-      title: "Email Template Generator",
+      title: "Nano Banana 图片生成器",
       description:
-        "A powerful email template generator application with drag-and-drop builder, responsive templates, and real-time preview. Create professional email templates for marketing campaigns and newsletters.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "EmailJS"],
-      liveLink: "#",
-      githubLink: "#",
+        "AI驱动的创意图片生成应用，支持多种风格和分辨率的图片生成。提供1K/2K/4K多档画质选择，内置配额管理和历史记录功能。",
+      technologies: ["React", "Firebase", "AI", "Canvas API"],
+      liveLink: "https://tools.zhangdamin.cn/image-generator",
+      githubLink: "https://github.com/damin-zhang",
     },
     {
-      title: "Portfolio Website",
+      title: "AI 视觉质检应用",
       description:
-        "A modern, responsive portfolio website built with Astro and styled-components. Features smooth animations and SEO optimization for better visibility.",
-      technologies: ["Astro", "Styled-components", "TypeScript", "Netlify"],
-      liveLink: "#",
-      githubLink: "#",
+        "饮料行业通用视觉检测系统，基于通义千问Qwen3-VL-Flash多模态模型。支持拍照上传、自动识别图片有效性、产品外观缺陷检测，提供置信度评估和详细检验报告。",
+      technologies: ["React", "Node.js", "Qwen3-VL", "Multer"],
+      liveLink: "https://tools.zhangdamin.cn/visual-inspection",
+      githubLink: "https://github.com/damin-zhang",
     },
     {
-      title: "Social Media Dashboard",
+      title: "AI 视觉质检应用 - 检测详情",
       description:
-        "A comprehensive social media analytics dashboard with real-time data visualization, engagement metrics, and content scheduling features for businesses.",
-      technologies: ["React", "TypeScript", "Chart.js", "REST API"],
-      liveLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Fitness Tracking App",
-      description:
-        "A mobile-first fitness tracking application with workout plans, progress tracking, and social sharing capabilities to help users stay motivated.",
-      technologies: ["React Native", "Firebase", "Redux", "Expo"],
-      liveLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Recipe Sharing Platform",
-      description:
-        "An interactive recipe sharing platform where users can discover, create, and share their favorite recipes with the community worldwide.",
-      technologies: ["Next.js", "PostgreSQL", "Prisma", "AWS"],
-      liveLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "E-Learning Platform",
-      description:
-        "A comprehensive e-learning platform with video courses, interactive quizzes, progress tracking, and certificate generation for online education.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Weather Forecast App",
-      description:
-        "A beautiful weather forecast application with location-based forecasts, detailed weather maps, and customizable widgets for accurate weather information.",
-      technologies: ["Vue.js", "OpenWeather API", "Chart.js", "PWA"],
-      liveLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Music Streaming Service",
-      description:
-        "A modern music streaming platform with personalized playlists, social features, and high-quality audio streaming for music enthusiasts worldwide.",
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS S3"],
-      liveLink: "#",
-      githubLink: "#",
-    },
-    {
-      title: "Project Management Tool",
-      description:
-        "An advanced project management tool with Gantt charts, team collaboration, time tracking, and comprehensive reporting for efficient project delivery.",
-      technologies: ["Angular", "NestJS", "PostgreSQL", "Docker"],
-      liveLink: "#",
-      githubLink: "#",
+        "视觉质检应用的详细检测视图，展示完整的AI分析流程。包括图片上传、模型分析动画、结论判定（合格/不合格/无效图片）、缺陷高亮标注和结构化检测报告。",
+      technologies: ["React", "Node.js", "Express", "REST API"],
+      liveLink: "https://tools.zhangdamin.cn/visual-inspection",
+      githubLink: "https://github.com/damin-zhang",
     },
   ],
 };
-
